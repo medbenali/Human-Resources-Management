@@ -1,2 +1,2 @@
-# Human-Resources-Management
-Human Resources Management System with PHP and MySQL
+# human-resource-managment
+HR Management System with PHP and MySQL

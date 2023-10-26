@@ -1,0 +1,11 @@
+
+.row
+{
+    height: 100vh;
+}
+
+.main_field
+{
+    width: max-content;
+    margin:  0 auto;
+}
