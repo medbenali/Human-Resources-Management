@@ -38,7 +38,7 @@
 
     <div class="col">
     <div class="card h-100">
-    <?php echo "<img src='$photo' height='130' width='150 class='card-img-top' alt='image1' >";?>
+    <?php echo "<img src='$photo' height=300 width=150 class='card-img-top' alt='image1' >";?>
       <div class="card-body">
         <h5 class="card-title"><?php echo $row['libelle'];?></h5>
         <h5 class="card-price"><?php echo $row['prix'];?> DT</h5>

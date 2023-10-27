@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 26, 2023 at 05:28 PM
+-- Generation Time: Oct 27, 2023 at 12:46 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -112,9 +112,9 @@ CREATE TABLE `commande` (
 --
 
 INSERT INTO `commande` (`id`, `num`, `codeclient`, `montantht`, `montva`, `monttc`, `etat`, `idpventee`, `datecmd`, `cinclient`, `idpointvente`) VALUES
-(1, 101, 103, 500, 20, 25, 'Validé', 1, '2023-10-18', '12345678', 1),
-(3, 301, 303, 500, 20, 25, 'En Cours', 1, '2023-10-18', '01234567', 1),
-(9, 401, 303, 7799, 10, 8578.9, 'En Cours', 1, '2023-10-26', '12345678', 1);
+(1, 101, 103, 7799, 100, 8578.9, 'Validé', 1, '2023-10-18', '12345678', 1),
+(9, 401, 303, 7799, 10, 8578.9, 'En Cours', 1, '2023-10-26', '12345678', 1),
+(22, 401, 303, 9985, 5, 10484.25, 'En Cours', 1, '2023-10-27', '12345678', 1);
 
 -- --------------------------------------------------------
 
@@ -195,8 +195,8 @@ CREATE TABLE `produit` (
 --
 
 INSERT INTO `produit` (`id`, `libelle`, `prix`, `quantite`, `tva`, `photo`) VALUES
-(1, 'APPLE MacBook Pro 16 M2 Pro 16Go 512Go SSD - Gris Sidéral', 9985, 10, 5, 'http://127.0.0.1/rh/IMG/apple-macbook-pro.jpg'),
-(2, 'iPhone 14 Pro Max 1Tera Violet Foncé - APPLE', 7799, 20, 10, 'http://127.0.0.1/rh/IMG/iphone-14-pro-max.jpg');
+(1, 'APPLE MacBook Pro 16 M2 Pro 16Go 512Go SSD - Gris Sidéral', 9985, 10, 5, 'http://127.0.0.1/Human-Resources-Management/IMG/apple-macbook-pro.jpg'),
+(2, 'iPhone 14 Pro Max 1Tera Violet Foncé - APPLE', 7799, 20, 10, 'http://127.0.0.1/Human-Resources-Management/IMG/iphone-14-pro-max.jpg');
 
 --
 -- Indexes for dumped tables
@@ -258,13 +258,13 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `commande`
 --
 ALTER TABLE `commande`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `conge`
 --
 ALTER TABLE `conge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `employe`
